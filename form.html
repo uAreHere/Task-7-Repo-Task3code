@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Personal Information</legend>
+    <form method type="GET"><!--GET is the default, other type of request is POST which is for secure fields-->
+        <p>
+            <label>First Name*: </label>
+            <input type="text" name="firstName" id="firstName" required placeholder="Your first name">
+    </p>
+    <p>
+        <label>Last Name*: </label>
+        <input type="text" name="lastName" id="lastName" required placeholder="Your last name">
+    </p>
+    <p>
+        <label>Email Address*: </label>
+        <input type="email" name="email" id="email" required placeholder="Your email address">
+    </p>
+    <p>
+        <label>
+           Password input*:
+        </label>
+        <input type="password" required>
+    </p>
+    <p>
+        <label>
+           Repeat password*:
+        </label>
+        <input type="password" required>
+    </p>
+</fieldset>
+
+    <fieldset>
+        <legend>Profile Information</legend>
+    <p>Grade Level <input type="radio" name="grade-level" id="freshman">
+        <label value="fr" for="freshman">Freshman</label> 
+        <input type="radio" name="grade-level" id="sophomore"><label value="so" for="sophomore">Sophomore</label> 
+        <input type="radio" name="grade-level" id="junior"><label value="jr" for="junior">Junior</label> 
+        <input type="radio" name="grade-level" id="senior"><label value="se" for="senior">Senior</label> 
+        <input type="radio" name="grade-level" id="graduate"><label value="gr" for="gradute">Graduate</label>
+    </p>
+    <p>
+        
+        <legend>Favorite Genre of Music*:</label>
+      
+    </p>
+    <p>
+        <label for="favorite-member">Favorite Member of the Wu-Tang Clan*</label>
+        <select required name="favorite-member" id="favorite-member">
+            <option selected value="">--Select--</option>
+            <option value="rza">RzA</option>
+            <option value="gza">GzA</option>
+            <option value="oldirty">Ol' Dirty</option>
+            <option value="inspectahdeck">Inspectah Deck</option>
+            <option value="raekwon">Raekwon</option>
+            <option value="ugod">U-God</option>
+            <option value="ghostfacekillah">Ghostface Killah</option>
+            <option value="methodman">Method Man</option>
+        </select> 
+    </p>
+    <p><input type="checkbox" name="sign-up" id="sign-up" value="sign-up">Sign me up for spam emails, because I don't get enough junk email!</p>
+</fieldset>
+    <p>
+        <label>
+            *Required
+        </label>
+        <input type="submit" placeholder="Submit this form!">
+    </p>
+</body>
+</html>
